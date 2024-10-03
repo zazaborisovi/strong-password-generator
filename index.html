@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>random password generator</title>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <script src="https://kit.fontawesome.com/57925fd35f.js" crossorigin="anonymous"></script>
+    </head>
+     <body>
+        <div id="mainDiv">
+            <div id="generatedPassword"><h2 id="password"></h2><i class="fa-solid fa-copy" id="copyText"></i></div>
+            <form action="">
+                <div id="labels">
+                    <label for="lower">Lowercase </label>
+                    <label for="upper">Uppercase </label>
+                    <label for="numbers">Numbers </label>
+                    <label for="symbols">Symbols </label>
+                </div>
+                <div id="checkboxes">
+                    <input type="radio" name="case" id="lower" checked>
+                    <input type="radio" name="case" id="upper">
+                    <input type="checkbox" name="numbers" id="numbers">
+                    <input type="checkbox" name="symbols" id="symbols">
+                </div>
+            </form>
+            <button id="generate">generate</button>
+        </div>
+
+        <script src="./script.js"></script>
+     </body>
+</html>
